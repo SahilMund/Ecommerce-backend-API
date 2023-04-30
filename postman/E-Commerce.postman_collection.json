@@ -1,0 +1,808 @@
+{
+	"info": {
+		"_postman_id": "fd79e833-4346-48ce-a5cd-725b85dd417f",
+		"name": "E-Commerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12887398"
+	},
+	"item": [
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Fetch_all_categories",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "Fetch_all_categories",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/categories/fetch-all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"categories",
+										"fetch-all"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "611"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"263-GDMFkWpUW6/ZlX/xig+OsZqRsXs\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Apr 2023 11:26:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Category Details Fetched Successfully\",\n    \"success\": true,\n    \"data\": [\n        {\n            \"_id\": \"644bffe9b7fa12f61ab7e7f0\",\n            \"name\": \"Shirt and Pants\",\n            \"description\": \"Clothing\",\n            \"createdAt\": \"2023-04-28T17:18:33.450Z\",\n            \"updatedAt\": \"2023-04-28T17:18:33.450Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"644cfe60365a9233a0e97af3\",\n            \"name\": \"Mobile and Accessories\",\n            \"description\": \"Catgeory - 2\",\n            \"createdAt\": \"2023-04-29T11:24:16.595Z\",\n            \"updatedAt\": \"2023-04-29T11:24:16.595Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"644cfeda765fec78da561512\",\n            \"name\": \"Beverages\",\n            \"description\": \"Bevarages related products\",\n            \"createdAt\": \"2023-04-29T11:26:18.044Z\",\n            \"updatedAt\": \"2023-04-29T11:26:18.044Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Add_Category",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "Add_Category",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Mobile and Accessories\",\r\n    \"description\":\"Catgeory - 2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/categories/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"categories",
+										"add"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "56"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"38-J/upaL/RGTVK6A4+UpeAIiet/7Q\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Apr 2023 11:24:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Category Added Successfully\",\n    \"success\": true\n}"
+						},
+						{
+							"name": "Add_Category",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Beverages",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Bevarages related products",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/categories/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"categories",
+										"add"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "56"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"38-J/upaL/RGTVK6A4+UpeAIiet/7Q\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Apr 2023 11:26:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Category Added Successfully\",\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "update_category",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "update_category",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Mobile and Accessories",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Mobile and It's accessories like headphones etc",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:4000/categories/update/644cfe60365a9233a0e97af3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"categories",
+										"update",
+										"644cfe60365a9233a0e97af3"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "644bfe826efb543ca13e68a6",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "66"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"42-FV19NUyhr94iJW982i7VVOLObJc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Apr 2023 11:28:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Category details updated Successfully\",\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "remove_category",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "remove_category",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/categories/delete/644cfeda765fec78da561512",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"categories",
+										"delete",
+										"644cfeda765fec78da561512"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "99"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"63-XS0w7e/AAaSIRRy4o7O8uCbp1uA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Apr 2023 11:42:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Category and products present under this category removed Successfully\",\n    \"success\": true\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "FETCH_Products",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "FETCH_Products",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/products/fetch-all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"products",
+										"fetch-all"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "57"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"39-uQx2cuYofPAw4RZ1a05rCzNwU1w\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Apr 2023 11:29:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"No Product Present\",\n    \"success\": true,\n    \"data\": []\n}"
+						},
+						{
+							"name": "FETCH_Products",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/products/fetch-all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"products",
+										"fetch-all"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "824"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"338-Y+q+e6IEkmeeGlcPxvF+35GU2NY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Apr 2023 11:34:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Products Fetched Successfully\",\n    \"success\": true,\n    \"data\": [\n        {\n            \"_id\": \"644d004b0c9cd56e903fd5c4\",\n            \"name\": \"IPhone\",\n            \"description\": \"IPhone V13\",\n            \"category\": {\n                \"_id\": \"644cfe60365a9233a0e97af3\",\n                \"name\": \"Mobile and Accessories\",\n                \"description\": \"Mobile and It's accessories like headphones etc\",\n                \"createdAt\": \"2023-04-29T11:24:16.595Z\",\n                \"updatedAt\": \"2023-04-29T11:28:29.489Z\",\n                \"__v\": 0\n            },\n            \"createdAt\": \"2023-04-29T11:32:27.846Z\",\n            \"updatedAt\": \"2023-04-29T11:32:27.846Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"644d00a30c9cd56e903fd5c8\",\n            \"name\": \"Tea Packet\",\n            \"description\": \"Red Label Tea\",\n            \"category\": {\n                \"_id\": \"644cfeda765fec78da561512\",\n                \"name\": \"Beverages\",\n                \"description\": \"Bevarages related products\",\n                \"createdAt\": \"2023-04-29T11:26:18.044Z\",\n                \"updatedAt\": \"2023-04-29T11:26:18.044Z\",\n                \"__v\": 0\n            },\n            \"createdAt\": \"2023-04-29T11:33:55.327Z\",\n            \"updatedAt\": \"2023-04-29T11:33:55.327Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Add_product",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "Add_product",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "IPhone",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "IPhone V13",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "644cfe60365a9233a0e97af3",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:4000/products/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"products",
+										"add"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "55"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"37-7INq6oQ69a6jDklSy8npApQHow0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Apr 2023 11:32:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Product Added Successfully\",\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "update_product",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "update_product",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Tea Pac",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Red Label Tea - Big Family Packet",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "644cfeda765fec78da561512",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:4000/products/update/644d00a30c9cd56e903fd5c8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"products",
+										"update",
+										"644d00a30c9cd56e903fd5c8"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "65"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"41-gSDzqXSIT4/04l87JIS5YdJ6A98\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Apr 2023 11:41:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Product details updated Successfully\",\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "delete_product",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "delete_product",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/products/delete/644d004b0c9cd56e903fd5c4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"products",
+										"delete",
+										"644d004b0c9cd56e903fd5c4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "57"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"39-b1Fjd7Fsdph5Vvi6Oj0nLLt/brQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Apr 2023 11:42:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Product removed Successfully\",\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Fetch_product_by_category_with_pagination",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "Fetch_product_by_category_with_pagination",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/products/category/644d033ab80a2b8d5c0152ab?page=1&limit=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"products",
+										"category",
+										"644d033ab80a2b8d5c0152ab"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "810"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"32a-BPe9JHZnhlotvQgymcRZ+6lrCgQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 30 Apr 2023 17:38:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Product fetched by Category Successfully\",\n    \"success\": true,\n    \"data\": [\n        {\n            \"_id\": \"644d03e1b80a2b8d5c0152b8\",\n            \"name\": \"Tea Packet\",\n            \"description\": \"Red Label Tea\",\n            \"category\": {\n                \"_id\": \"644d033ab80a2b8d5c0152ab\",\n                \"name\": \"Beverages\",\n                \"description\": \"Bevarages related products\",\n                \"createdAt\": \"2023-04-29T11:44:58.500Z\",\n                \"updatedAt\": \"2023-04-29T11:44:58.500Z\",\n                \"__v\": 0\n            },\n            \"createdAt\": \"2023-04-29T11:47:45.798Z\",\n            \"updatedAt\": \"2023-04-29T11:47:45.798Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"644ea72417d138b8bf6e851f\",\n            \"name\": \"Green Tea\",\n            \"description\": \"Green Tea - desc\",\n            \"category\": {\n                \"_id\": \"644d033ab80a2b8d5c0152ab\",\n                \"name\": \"Beverages\",\n                \"description\": \"Bevarages related products\",\n                \"createdAt\": \"2023-04-29T11:44:58.500Z\",\n                \"updatedAt\": \"2023-04-29T11:44:58.500Z\",\n                \"__v\": 0\n            },\n            \"createdAt\": \"2023-04-30T17:36:36.551Z\",\n            \"updatedAt\": \"2023-04-30T17:36:36.551Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
