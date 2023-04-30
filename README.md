@@ -49,7 +49,6 @@ npm start (or) npm run devStart
 <br>
 
 ## API endpoints:
-<hr/>
 
 ### 1. categories:
 - /categories/add
