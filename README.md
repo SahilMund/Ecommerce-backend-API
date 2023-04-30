@@ -45,7 +45,7 @@ npm start (or) npm run devStart
 - Import the Json file present in postman folder to postman 
 - Check the API response
 ```
-
+Note :- I have added localhost MongoDB URL in the config/momggose file, you can replace it with mongoDB atlas URL as well
 <br>
 
 ## API endpoints:
