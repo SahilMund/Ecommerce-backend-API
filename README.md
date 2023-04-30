@@ -1,11 +1,10 @@
 
 <h1> ECommerce - API</h1>
 
-### Theme :-
-```
-An ECommerce site wants to manage their category details and Products present under it. Hence creating a Node.JS application which will
-be having different endpoints to manage both categories and products
-```
+## Description :-
+Creating a Node.JS application that allows an eCommerce site to manage categories and the products within them. 
+This application will have various endpoints to handle CRUD operations for both categories and products.
+
 
 </ol><h2>Tools/Technologies Used</h2>
 <hr><ul>
@@ -18,16 +17,15 @@ be having different endpoints to manage both categories and products
 <li>MongoDB</li>
 </ul>
 
-<hr>
+<br>
 
 
 
 ## How To Use :-
-
 ####    Step 1 :-  Clone the repo
  
 ```
-git clone https://github.com/SahilMund/Hospital-API.git
+git clone https://github.com/SahilMund/Ecommerce-backend-API.git
 ```
 ####    Step 2 :- To install the dependencies
 
@@ -48,6 +46,7 @@ npm start (or) npm run devStart
 - Check the API response
 ```
 
+<br>
 
 ## API endpoints:
 <hr/>
@@ -65,7 +64,14 @@ npm start (or) npm run devStart
 - /products/delete/id
 - /products/category/:id?limit=1&page=1
 
+<br>
 
+## Postman documentation :-
+Refer this link to see postman documentation
+<a href="https://documenter.getpostman.com/view/12887398/2s93eSZFY7"> Click Me </a>
+
+
+<br>
 
 ## Folder Structure :-
 ```
